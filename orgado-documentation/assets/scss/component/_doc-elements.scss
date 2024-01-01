@@ -1,0 +1,68 @@
+/*----------------------------------------
+	elements item
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-doc {
+  &__elements-inner {
+    padding-top: 80px;
+    @media #{$md} {
+      padding-top: 60px;
+    }
+    @media #{$sm,$xs} {
+      padding-top: 40px;
+    }
+    p {
+      margin-bottom: 30px;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// elements item css
+.bd-doc {
+  &__elements {
+    &-item {
+      padding-top: 50px;
+    }
+    &-inner {
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+// alert css
+.alert-info {
+  background: #ddebf4;
+  border-color: #9dc7e1;
+  h5 {
+    color: var(--clr-theme-1);
+  }
+  i {
+    color: var(--clr-theme-1);
+  }
+}
+
+
+// feature
+
+.orgado-feature-div{
+  margin-bottom: 30px;
+  background: rgb(240, 240, 240);
+  padding: 15px;
+  border-radius: 6px;
+}
+.bd-list__title{
+  margin-bottom: 20px;
+}
+.feature-ul li{
+  color: var(--clr-common-black);
+  margin-bottom: 5px;
+  list-style-type:square;
+  margin-left: 30px;
+}
+
+
